@@ -1,0 +1,27 @@
+#Twitter API connect code clean
+
+install.packages("twitteR", dependencies=T)
+install.packages("plyr")
+install.packages("ROAuth")
+install.packages("base64enc")
+
+library(ROAuth)
+library(twitteR)
+library(plyr)
+library(base64enc)
+
+
+reqURL <- "https://api.twitter.com/oauth/request_token"
+
+accessURL <- "https://api.twitter.com/oauth/access_token"
+
+authURL <- "https://api.twitter.com/oauth/authorize"
+
+consumerKey <- "5DYzbfgWnSgiKekorWhJbbmCh"
+
+consumerSecret <- "7QUcO2ySrFddt5vUL1zWso1994KABsoSpVwaLDbcpH4MYmjpi2"
+
+accessToken <- "316615384-D9xpi9xfxlCDNGWwqlrYCyz7IFfPy2tJvRGejhMq"
+accessTokenSecret <- "0pIUjlE2McnQnupdmUsQiDOV94lxVeL9PH0wLJbfVd1Vo"
+
+setup_twitter_oauth(consumerKey, consumerSecret, accessToken, accessTokenSecret)
